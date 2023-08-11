@@ -12,6 +12,10 @@
     "vite": "4.4.5"
   },
   "dependencies": {
-    "sass": "^1.65.1"
+    "@fancyapps/fancybox": "3.5.7",
+    "bootstrap": "5.3.1",
+    "jquery": "^3.7.0",
+    "owl.carousel": "2.3.4",
+    "sass": "1.65.1"
   }
 }
