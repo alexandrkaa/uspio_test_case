@@ -2,14 +2,13 @@
   "name": "uspio_test_case",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "4.4.5"
+  "engines": {
+    "node": "16"
   },
   "dependencies": {
     "@fancyapps/fancybox": "3.5.7",
@@ -17,5 +16,9 @@
     "jquery": "^3.7.0",
     "owl.carousel": "2.3.4",
     "sass": "1.65.1"
+  },
+  "devDependencies": {
+    "vite": "4.4.5",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }
