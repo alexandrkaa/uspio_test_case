@@ -1,0 +1,32 @@
+.text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text_lead {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.text_bold {
+  font-weight: 600;
+}
+
+.text_lead_big {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.text_theme_green {
+  color: $green-light;
+}
+
+.text_theme_white {
+  color: $white;
+}
+
+.text_theme_gray {
+  color: $gray-light-text;
+}

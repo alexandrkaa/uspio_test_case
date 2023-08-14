@@ -1,0 +1,17 @@
+.link {
+  cursor: pointer;
+  border: 0;
+  box-shadow: none;
+  text-decoration: none;
+  background-color: $trnsprnt;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include is-active {
+    text-decoration: underline;
+  }
+}

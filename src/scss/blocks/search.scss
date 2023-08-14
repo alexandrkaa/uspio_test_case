@@ -1,0 +1,20 @@
+.search {
+  width: 200px;
+}
+
+.search__button {
+  background-color: $trnsprnt;
+  box-shadow: none;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/magnifying-glass.svg");
+}
+
+.search__input {
+  background-color: $trnsprnt;
+  min-height: 30px;
+  border: 0;
+  box-shadow: none;
+  margin-left: 10px;
+}

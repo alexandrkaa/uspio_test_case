@@ -1,0 +1,20 @@
+$white: #ffffff;
+$text-primary: #37454a;
+$green: #6eb744;
+$green-dark: #62a53c;
+$green-light: #76b926;
+$green-shadow: rgba(46, 73, 16, 0.09);
+$gray-background: #f4f4f4;
+$gray-light: #dfdfdf;
+$gray: #37454a;
+$gray-light-text: transparentize($gray, 0.3);
+$gray-faq-bg: #edeef0;
+$black: #000000;
+$gray-overlay: rgba(0, 0, 0, 0.5);
+$black-shadow: rgba(0, 0, 0, 0.1);
+$trnsprnt: rgba(255, 255, 255, 0);
+
+body {
+  color: $text-primary;
+  background-color: $gray-background;
+}

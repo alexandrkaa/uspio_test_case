@@ -1,0 +1,34 @@
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: $green-light;
+  border: 1px solid $green-light;
+  cursor: pointer;
+  border-radius: 4px;
+
+  input:checked + & {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 4px;
+      width: 6px;
+      height: 2px;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 7px;
+      width: 10px;
+      height: 2px;
+      background-color: $white;
+      transform: rotate(-45deg);
+    }
+  }
+}

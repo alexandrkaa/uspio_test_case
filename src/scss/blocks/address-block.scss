@@ -1,0 +1,53 @@
+.address-block__lead {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.address-block__address {
+  font-style: normal;
+  display: flex;
+
+  p {
+    margin: 0;
+  }
+
+  button:first-of-type {
+    margin-right: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $gray-light;
+    }
+  }
+}
+
+.address-block__geo {
+  padding-left: 26px;
+  background-image: url("../assets/pin.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left center;
+  border: 0;
+  box-shadow: none;
+  background-color: $trnsprnt;
+  cursor: pointer;
+  color: $green-light;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include is-active {
+    text-decoration: underline;
+  }
+}

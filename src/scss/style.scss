@@ -1,14 +1,40 @@
-// scss-docs-start import-stack
-// Configuration
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/variables-dark";
-// @import "../../node_modules/bootstrap/scss/maps";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// // @import "../../node_modules/bootstrap/scss/utilities";
-
-// // Layout & components
-// // @import "../../node_modules/bootstrap/scss/root";
-// @import "../../node_modules/bootstrap/scss/reboot";
-
+@import "../../node_modules/normalize-scss/sass/normalize";
+@import "./mixin.scss";
+@import "./fonts.scss";
+@import "./breakpoints.scss";
+@import "./colors.scss";
 @import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
+@import "./blocks/input-block.scss";
+@import "./blocks/input.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/close.scss";
+@import "./blocks/text.scss";
+@import "./blocks/link.scss";
+@import "./blocks/wrapper.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/sub-header.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/upper-tools.scss";
+@import "./blocks/address-block.scss";
+@import "./blocks/callback.scss";
+@import "./blocks/favorite-link.scss";
+@import "./blocks/count-label.scss";
+@import "./blocks/cart-link.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/search.scss";
+@import "./blocks/hero-breadcrumbs.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/services.scss";
+@import "./blocks/call-to-action.scss";
+@import "./blocks/lead.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/faq-slider.scss";
+@import "./blocks/faq-lead.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/subscribe-and-social.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/get-appointment.scss";
+@import "./blocks/social.scss";
+@import "./blocks/footer-navigation.scss";
+@import "./blocks/copyrights.scss";

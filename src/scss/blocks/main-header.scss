@@ -1,0 +1,17 @@
+.main-header {
+  background-color: $white;
+}
+
+.main-header__upper-tools-wrapper {
+  padding: 0 15px;
+}
+
+.main-header__logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header__navigation {
+  background-image: linear-gradient(to right, $green-light 0, $green-light 50%, $green-dark 50%, $green-dark 100%);
+}

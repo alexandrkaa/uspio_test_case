@@ -1,0 +1,27 @@
+.hero {
+  background-color: $gray-background;
+}
+
+.hero__wrapper {
+  display: flex;
+}
+
+.hero__header {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.hero__header_theme_green {
+  color: $green-light;
+}
+
+.hero__img {
+  float: right;
+}
+
+.hero__content {
+  padding: 20px 0;
+  padding-left: 15px;
+}

@@ -1,0 +1,68 @@
+.main-footer {
+  padding-top: 55px;
+  background-color: $white;
+}
+
+.main-footer__contacts-and-menu-wrapper {
+  padding: 40px 0;
+  display: flex;
+}
+
+.main-footer__contacts-and-menu {
+  background-color: $gray-background;
+}
+
+.main-footer__contacts {
+  width: 293px;
+  border-right: 1px solid $gray-light;
+}
+
+.main-footer__contacts-list {
+  @include list-reset;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.main-footer__contacts-item {
+  padding-left: 30px;
+  background-position: left center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &_call {
+    background-image: url("../assets/phone-call.svg");
+  }
+
+  &_email {
+    background-image: url("../assets/email.svg");
+  }
+
+  &_questions {
+    background-image: url("../assets/questions.svg");
+  }
+
+  &_feedback {
+    background-image: url("../assets/feedback.svg");
+  }
+}
+
+.main-footer__contacts-footnote {
+  padding: 0 30px;
+  p {
+    margin: 0;
+    margin-left: -30px;
+    padding: 20px 0;
+    border-top: 1px solid $gray-light;
+  }
+}
+
+.main-footer__navigation-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  width: 100%;
+}

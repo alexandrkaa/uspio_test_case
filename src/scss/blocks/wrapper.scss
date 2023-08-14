@@ -1,0 +1,12 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: map-get($breakpoints, "desktop");
+}
+
+.wrapper_theme_grey {
+  background-color: $gray-background;
+}
+
+.wrapper_theme_white {
+  background-color: $white;
+}

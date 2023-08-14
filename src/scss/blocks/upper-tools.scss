@@ -1,0 +1,46 @@
+.upper-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-tools__get-appointment {
+  background-image: url("../assets/checkup_btn_logo.svg");
+  padding-left: 71px;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: left 30px center;
+  max-width: 214px;
+  font-weight: 500;
+}
+
+.upper-tools__address-block {
+  padding-left: 30px;
+  border-left: 1px solid $gray-background;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-tools__phone {
+  color: $text-primary;
+  text-decoration: none;
+}
+
+.upper-tools__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.upper-tools__cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.upper-tools__favorite-link {
+  margin-right: 20px;
+}

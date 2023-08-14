@@ -1,0 +1,25 @@
+.subscribe {
+  display: flex;
+  justify-content: space-around;
+  // width: calc((100% / 3) * 2);
+  width: 60%;
+  padding: 20px 0;
+}
+
+.subscribe__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.subscribe__form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe__input {
+  width: 210px;
+  margin-right: 15px;
+}

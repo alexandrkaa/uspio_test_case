@@ -1,0 +1,14 @@
+.input {
+  display: block;
+  min-height: 52px;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 52px;
+  padding: 15px 30px;
+  background-color: $trnsprnt;
+  border: 1px solid $green-light;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}

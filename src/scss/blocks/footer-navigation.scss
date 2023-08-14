@@ -1,0 +1,19 @@
+.footer-navigation__list {
+  @include list-reset;
+  margin: 0;
+}
+
+.footer-navigation__link {
+  font-size: 14px;
+  line-height: 25px;
+  color: $gray-light-text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include is-active {
+    text-decoration: underline;
+  }
+}

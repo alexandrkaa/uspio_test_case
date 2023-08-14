@@ -1,0 +1,41 @@
+.main-navigation {
+  max-width: map-get($breakpoints, "desktop");
+  margin: 0 auto;
+  background-image: linear-gradient(to left, $green-dark 0, $green-dark 60px, $green-light 60px, $green-light 100%);
+  min-height: 70px;
+  padding: 0 15px;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-navigation__menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: auto 0;
+}
+
+.main-navigation__item {
+  padding: 0 26px;
+
+  &:not(:last-child) {
+    border-right: 1px solid transparentize($color: $text-primary, $amount: 0.2);
+  }
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.main-navigation__search {
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -170px;
+}

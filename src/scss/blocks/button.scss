@@ -1,0 +1,68 @@
+.button {
+  min-height: 52px;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 26px;
+  padding: 12px;
+  background-color: $trnsprnt;
+  border: 1px solid $green-light;
+  box-shadow: none;
+  cursor: pointer;
+
+  @include is-active {
+    background-color: transparentize($green-light, 0.75);
+  }
+
+  &:hover {
+    background-color: transparentize($green-light, 0.9);
+  }
+
+  &_theme_green {
+    background-color: $green-light;
+    background: linear-gradient(90deg, $green-light 0%, $green-dark 100%);
+    color: $white;
+    box-shadow: 0px 10px 20px 0px $green-shadow;
+
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+
+  &_theme_arrow {
+    min-height: 70px;
+    padding: 10px 30px;
+    padding-right: 70px;
+    border-radius: 35px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 10px;
+      top: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: $white;
+      background-image: url("../assets/arrow-point-to-right.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: center center;
+    }
+
+    &:hover {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+
+    @include is-active {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

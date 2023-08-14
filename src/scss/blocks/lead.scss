@@ -1,0 +1,13 @@
+.lead {
+  background-color: $white;
+  padding: 60px 0;
+}
+
+.lead__wrapper {
+  display: flex;
+}
+
+.lead__image {
+  margin-left: auto;
+  align-self: flex-start;
+}

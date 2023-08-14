@@ -10,185 +10,331 @@
   </head>
   <body>
     <h1 class="visually-hidden">Инновационная клиника онлайн-проверки зрения</h1>
+    <article class="popup">
+      <form class="popup__get-appointment get-appointment">
+        <h2 class="sub-header">Записаться на проверку зрения</h2>
+        <label class="input-block">
+          Введите email
+          <input class="appointment__email input text" type="email" />
+        </label>
+        <label class="input-block">
+          Введите телефон
+          <input class="appointment__phone input text" type="phone" />
+        </label>
+        <label class="appointment__news">
+          <input class="visually-hidden" type="checkbox" />
+          <span class="checkbox"></span>
+          <span class="appointment__news-text">Я хочу получать информацию о новостях и акциях компании</span>
+        </label>
+        <button class="button">Отправить</button>
+        <button class="close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+      </form>
+    </article>
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <section class="main-header__upper-tools uppper-tools">
-          <a href="/" class="logo">
+      <div class="main-header__upper-tools-wrapper wrapper wrapper_theme_white">
+        <section class="main-header__upper-tools upper-tools">
+          <a href="/" class="main-header__logo logo">
             <img src="src/assets/logo.png" alt="Логотип компании по проверке зрения" class="logo__img" />
           </a>
-          <section class="upper-tools__center">
-            <p class="upper-tools__address-lead">Текст</p>
-            <address class="upper-tools__address">Тексттт (10)</address>
-            <p>текст (10)</p>
-            <button class="upper-tools__get-appointment">Запишитесь на проверку</button>
+          <section class="upper-tools__address-block address-block">
+            <p class="text text_lead address-block__lead">Текст Текст</p>
+            <address class="address-block__address text text_theme_green">
+              <button class="address-block__geo">Тексттт (10)</button>
+              <p class="text text_theme_gray">Текст Текст (10)</p>
+            </address>
           </section>
+          <button class="button upper-tools__get-appointment btn-get-appointment">Запишитесь на проверку</button>
           <section class="upper-tools__contacts">
-            <a class="upper-tools__phone" href="tel:+78001111111">+7 (800) 111-111-1</a>
-            <button class="upper-tools__callback">Перезвоните мне</button>
+            <a class="upper-tools__phone text text_lead text_lead_big" href="tel:+78001111111">+7 (800) 111-111-1</a>
+            <button class="callback">Перезвоните мне</button>
           </section>
           <section class="upper-tools__cart">
-            <a class="upper-tools__favorite-link" href="#">
+            <a class="upper-tools__favorite-link favorite-link" href="#">
+              <span class="count-label">7</span>
               <span class="visually-hidden">Перейти в избранное</span>
             </a>
-            <a class="upper-tools__cart-link" href="#">
+            <a class="upper-tools__cart-link cart-link" href="#">
+              <span class="count-label">3</span>
               <span class="visually-hidden">Перейти в корзину</span>
             </a>
           </section>
         </section>
-        <nav class="main-header__navigation main-navigation">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Текст 1</a></li>
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Текст 2</a></li>
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Текст 3</a></li>
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Текст 4</a></li>
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Текст 5</a></li>
-          </ul>
-        </nav>
-        <article class="main-header__hero hero">
-          <nav class="hero__breadcrumbs hero-breadcrumbs">
-            <ul class="hero-breadcrumbs__list">
-              <li class="hero-breadcrumbs__item">Home</li>
-              <li class="hero-breadcrumbs__item">2</li>
-            </ul>
-          </nav>
-          <h1 class="hero__header">
-            Заголовок <span class="hero__header_theme_green">текст текст</span> текст текст текст текст
-          </h1>
-          <p class="text text_theme_gray">
-            текст текст, текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-            текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
-          </p>
-          <p class="text">
-            Текст – текст текст текст текст текст , текст текст текст текст текст текст текст текст текст текст текст
-            текст текст текст текст текст.
-          </p>
-          <button class="button">Записаться на проверку</button>
-          <img
-            src="src/assets/hero_img.jpg"
-            alt="Изображение врача, на фоне таблицы по проверке зрения, держащего в руках очки"
-          />
-        </article>
       </div>
+      <section class="main-header__navigation">
+        <nav class="main-navigation">
+          <ul class="main-navigation__menu">
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
+            </li>
+          </ul>
+          <form class="main-navigation__search search">
+            <button class="search__button">
+              <span class="visually-hidden">Искать</span>
+            </button>
+            <input class="search__input" type="text" placeholder="" />
+          </form>
+        </nav>
+      </section>
+      <article class="main-header__hero hero">
+        <div class="hero__wrapper wrapper wrapper_theme_grey">
+          <section class="hero__content">
+            <nav class="hero__breadcrumbs hero-breadcrumbs">
+              <ul class="hero-breadcrumbs__list">
+                <li class="hero-breadcrumbs__item hero-breadcrumbs__item_home">
+                  <a href="/" class="hero-breadcrumbs__link">
+                    <span class="visually-hidden">Переход на главную страницу</span>
+                  </a>
+                </li>
+                <li class="hero-breadcrumbs__item">
+                  <a href="#" class="hero-breadcrumbs__link text text_theme_green">Текст 2</a>
+                </li>
+                <li class="hero-breadcrumbs__item">
+                  <a href="#" class="hero-breadcrumbs__link text text_theme_green">Текст 2</a>
+                </li>
+                <li class="hero-breadcrumbs__item">
+                  <a href="#" class="hero-breadcrumbs__link text text_theme_green">Текст 2</a>
+                </li>
+              </ul>
+            </nav>
+            <h1 class="hero__header">
+              Заголовок <span class="hero__header_theme_green">текст текст</span> текст текст текст текст
+            </h1>
+            <p class="text text_theme_gray">
+              текст текст, текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+              текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+              текст текст.
+            </p>
+            <p class="text">
+              Текст – текст текст текст текст текст , текст текст текст текст текст текст текст текст текст текст текст
+              текст текст текст текст текст.
+            </p>
+            <button class="button btn-get-appointment">Записаться на проверку</button>
+          </section>
+          <a
+            href="src/assets/hero_img.jpg"
+            data-fancybox
+            data-caption="Изображение врача, на фоне таблицы по проверке зрения, держащего в руках очки"
+          >
+            <img
+              class="hero__img"
+              src="src/assets/hero_img.jpg"
+              alt="Изображение врача, на фоне таблицы по проверке зрения, держащего в руках очки"
+            />
+          </a>
+        </div>
+      </article>
     </header>
     <main class="main-content">
       <section class="services">
-        <h2 class="services__header sub-header">Заголовок заголовок заголовок</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-          <li class="services__item">
-            <p class="text_size_plus">Текст Текст текст Текст текст Текст</p>
-          </li>
-        </ul>
-        <button class="button_theme_green button_theme_arrow">Записаться на проверку</button>
-      </section>
-      <section class="lead">
-        <h2 class="lead__header">Текст текст:</h2>
-        <ul class="lead__list">
-          <li class="lead__item">Текст текст</li>
-          <li class="lead__item">Текст текст</li>
-          <li class="lead__item">Текст текст</li>
-          <li class="lead__item">Текст текст</li>
-          <li class="lead__item">Текст текст</li>
-          <li class="lead__item">Текст текст</li>
-        </ul>
-        <img class="lead__image" src="src/assets/lead_img.jpg" alt="Изображение врача измеряющего зрения у пациeнта" />
-      </section>
-      <section class="faq">
-        <h2 class="faq__header sub-header">Заголовок</h2>
-        <ul class="faq__slider faq-slider">
-          <li class="faq-slider__item">
-            <div class="faq-slider__item-wrapper">
-              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
-              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
-            </div>
-          </li>
-          <li class="faq-slider__item">
-            <div class="faq-slider__item-wrapper">
-              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
-              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
-            </div>
-          </li>
-          <li class="faq-slider__item">
-            <div class="faq-slider__item-wrapper">
-              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
-              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
-            </div>
-          </li>
-        </ul>
-        <aside class="text_theme_gray">
-          *текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-          текст текст текст текст текст текст текст текст текст текст текст текст текст.
-        </aside>
-      </section>
-      <section class="faq-lead">
-        <h2 class="faq-lead__header sub-header">Вопрос вопрос вопрос вопрос вопрос вопрос вопрос?</h2>
-        <ol class="faq-lead__list">
-          <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
-          <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
-          <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
-          <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
-          <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
-        </ol>
-        <p class="text_size_plus">
-          Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-          текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-          текст текст текст текст текст текст текст текст текст текст текст текст .
-        </p>
-        <img class="faq-lead__image" src="src/assets/faq_lead_img.jpg" alt="Изображение врача измеряющего зрения у пациeнта" />
+        <div class="services__wrapper wrapper wrapper_theme_white">
+          <h2 class="services__header sub-header">Заголовок заголовок заголовок</h2>
+          <ul class="services__list">
+            <li class="services__item services__item_medical-glasses">
+              <p class="text text_lead text_size_plus">
+                Текст <span class="text_theme_green">Текст текст</span> Текст текст Текст
+              </p>
+            </li>
+            <li class="services__item services__item_contact-lens">
+              <p class="text text_lead text_size_plus">
+                Текст Текст Текст Текст Текст Текст Текст<br />
+                Текст Текст Текст
+              </p>
+            </li>
+            <li class="services__item services__item_eye">
+              <p class="text text_lead text_size_plus">Текст Текст Текст Текст</p>
+            </li>
+            <li class="services__item services__item_man">
+              <p class="text text_lead text_size_plus">
+                Текст Текст Текст Текст<br />
+                Текст Текст<br />
+                Текст Текст
+              </p>
+            </li>
+            <li class="services__item services__item_glasses">
+              <p class="text text_lead text_size_plus">
+                <span class="text_theme_green">Текст Текст Текст</span>, <br />Текст Текст Текст Текст Текст Текст
+              </p>
+            </li>
+            <li class="services__item services__item_woman">
+              <p class="text text_lead text_size_plus">Текст Текст текст Текст текст Текст</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="call-to-action">
-        <button class="button_theme_green button_theme_arrow">Записаться на проверку</button>
+        <button
+          class="call-to-action__button button button_theme_green button_theme_arrow text text_lead text_theme_white btn-get-appointment"
+        >
+          Записаться на проверку
+        </button>
+      </section>
+      <section class="lead">
+        <div class="lead__wrapper wrapper wrapper_theme_white">
+          <section class="lead__content">
+            <h2 class="lead__header sub-header">Текст текст:</h2>
+            <ul class="lead__list">
+              <li class="lead__item text text_size_plus">Текст текст</li>
+              <li class="lead__item text text_size_plus">Текст текст</li>
+              <li class="lead__item text text_size_plus">Текст текст</li>
+              <li class="lead__item text text_size_plus">Текст текст</li>
+              <li class="lead__item text text_size_plus">
+                Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст
+              </li>
+              <li class="lead__item text text_size_plus">
+                Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст
+                текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст
+                Текст текст
+              </li>
+            </ul>
+          </section>
+          <img
+            class="lead__image"
+            src="src/assets/lead_img.jpg"
+            alt="Изображение врача измеряющего зрения у пациeнта"
+          />
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__wrapper wrapper wrapper_theme_grey">
+          <h2 class="faq__header sub-header">Заголовок</h2>
+          <section class="faq__slider faq-slider owl-carousel">
+            <!-- owl-carousel -->
+            <section class="faq-slider__item faq-slider__item_one">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+            <section class="faq-slider__item faq-slider__item_two">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+            <section class="faq-slider__item faq-slider__item_three">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+            <section class="faq-slider__item faq-slider__item_one">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+            <section class="faq-slider__item faq-slider__item_two">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+            <section class="faq-slider__item faq-slider__item_three">
+              <h3 class="faq-slider__header">Вопрос вопрос вопрос?</h3>
+              <p class="faq-slider__text text">Текст Текст Текст Текст Текст Текст</p>
+            </section>
+          </section>
+          <aside class="text_theme_gray">
+            *текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+            текст текст текст текст текст текст текст текст текст текст текст текст текст.
+          </aside>
+        </div>
+      </section>
+      <section class="faq-lead">
+        <div class="faq-lead__wrapper wrapper wrapper_theme_grey">
+          <section class="faq-lead__content">
+            <h2 class="faq-lead__header sub-header">Вопрос вопрос вопрос вопрос вопрос вопрос вопрос?</h2>
+            <ol class="faq-lead__list">
+              <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+              <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+              <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+              <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+              <li class="faq-lead__item text_size_plus">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+            </ol>
+            <p class="text text_size_plus">
+              Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+              текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+              текст текст текст текст текст текст текст текст текст текст текст текст текст текст .
+            </p>
+          </section>
+          <img
+            class="faq-lead__image"
+            src="src/assets/faq_lead_img.jpg"
+            alt="Изображение врача измеряющего зрения у пациeнта"
+          />
+        </div>
+      </section>
+      <section class="call-to-action">
+        <button
+          class="call-to-action__button button button_theme_green button_theme_arrow text text_lead text_theme_white btn-get-appointment"
+        >
+          Записаться на проверку
+        </button>
       </section>
     </main>
     <footer class="main-footer">
       <section class="subscribe-and-social">
-        <section class="subscribe">
-          <p class="text">Текст текст текст текст текст текст текст</p>
-          <form class="subscribe__form">
-            <input class="subscribe__input" type="email" placeholder="Введите свой e-mail" />
-            <button class="button button_theme_green">Подписаться</button>
-        </section>
-        <section class="social">
-          <h3 class="social__header">Мы в соцсетях:</h3>
-          <ul class="social__list">
-            <li class="social__item"><a href="#"><span class="visually-hidden">Перейти в ВКонтанте</span></a></li>
-            <li class="social__item"><a href="#"><span class="visually-hidden">Перейти в FaceBook</span></a></li>
-            <li class="social__item"><a href="#"><span class="visually-hidden">Перейти в Instagramm</span></a></li>
-          </ul>
-        </section>
+        <div class="subscribe-and-social__wrapper wrapper wrapper_theme_white">
+          <section class="subscribe-and-social__subscribe subscribe">
+            <p class="subscribe__text">Текст текст текст текст текст текст текст</p>
+            <form class="subscribe__form">
+              <input class="subscribe__input input text text_bold" type="email" placeholder="Введите свой e-mail" />
+              <button class="button button_theme_green btn-subscribe">Подписаться</button>
+            </form>
+          </section>
+          <section class="social">
+            <h3 class="social__header text text_lead">Мы в соц. сетях:</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link_vk" href="#"
+                  ><span class="visually-hidden">Перейти в ВКонтанте</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link_facebook" href="#"
+                  ><span class="visually-hidden">Перейти в FaceBook</span></a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link_instagram" href="#"
+                  ><span class="visually-hidden">Перейти в Instagramm</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
       <section class="main-footer__contacts-and-menu">
-        <div class="main-footer__contacts-and-menu-wrapper">
+        <div class="main-footer__contacts-and-menu-wrapper wrapper wrapper_theme_grey">
           <section class="main-footer__contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
             <a href="/" class="logo">
               <img src="src/assets/logo.png" alt="Логотип компании по проверке зрения" class="logo__img" />
             </a>
             <ul class="main-footer__contacts-list">
-              <li class="main-footer__contacts-item"><a href="tel:+78001111111" class="main-footer__contacts-link">+7 (800) 111-111-1</a></li>
-              <li class="main-footer__contacts-item"><a href="mailto: info@vimeo.ru" class="main-footer__contacts-link">info@vimeo.ru</a></li>
-              <li class="main-footer__contacts-item">
-                <button class="main-footer__contacts-link">Задать вопрос</button>
+              <li class="main-footer__contacts-item main-footer__contacts-item_call">
+                <a href="tel:+78001111111" class="text text_theme_gray link">+7 (800) 111-111-1</a>
               </li>
-              <li class="main-footer__contacts-item">
-                <button class="main-footer__contacts-link">Оставить отзыв</button>
+              <li class="main-footer__contacts-item main-footer__contacts-item_email">
+                <a href="mailto: info@vimeo.ru" class="text text_theme_gray link">info@vimeo.ru</a>
+              </li>
+              <li class="main-footer__contacts-item main-footer__contacts-item_questions">
+                <button class="text text_theme_gray link">Задать вопрос</button>
+              </li>
+              <li class="main-footer__contacts-item main-footer__contacts-item_feedback">
+                <button class="text text_theme_gray link">Оставить отзыв</button>
               </li>
             </ul>
-            <aside>текст текст текст текст текст текст текст текст текст текст текст текст текст </aside>
+            <aside class="main-footer__contacts-footnote text text_theme_gray">
+              <p>текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+            </aside>
           </section>
           <section class="main-footer__navigation-block">
             <nav class="main-footer__navigation footer-navigation">
@@ -235,8 +381,10 @@
         </div>
       </section>
       <section class="copyrights">
-        <a class="copyrights__confidentiality" href="#">Политика конфиденциальности</a>
-        <p class="copyrights__copyrights">© Все права защищены авторским правом</p>
+        <div class="copyrights__wrapper wrapper wrapper_theme_white">
+          <a class="copyrights__confidentiality" href="#">Политика конфиденциальности</a>
+          <p class="copyrights__copyrights">© Все права защищены авторским правом</p>
+        </div>
       </section>
     </footer>
     <!-- <div id="app">
