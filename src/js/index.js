@@ -5,11 +5,12 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.js';
-import { webpClass, noJs } from './utils.js';
+import { webpClass, noJs, startServiceWorker } from './utils.js';
 import { SLIDER_1_ITEM_SIZE, SLIDER_2_ITEMS_SIZE, SLIDER_LOOP } from './consts';
 
 webpClass();
 noJs();
+startServiceWorker();
 
 $(document).ready(function () {
   // popup
