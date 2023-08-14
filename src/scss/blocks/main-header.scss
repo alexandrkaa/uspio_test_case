@@ -14,4 +14,8 @@
 
 .main-header__navigation {
   background-image: linear-gradient(to right, $green-light 0, $green-light 50%, $green-dark 50%, $green-dark 100%);
+
+  @media (max-width: 1439px) {
+    background-image: linear-gradient(to left, $green-light 0, $green-light 100%);
+  }
 }

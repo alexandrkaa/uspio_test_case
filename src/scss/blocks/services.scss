@@ -21,7 +21,15 @@
   row-gap: 67px;
   column-gap: 30px;
   grid-template-columns: repeat(3, 370px);
-  grid-template-rows: minmax(1fr, 180px);
+  grid-template-rows: minmax(180px, 1fr);
+
+  @include mqm(tablet-plus) {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+
+  @include mqm(tablet) {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
 }
 
 .services__item {
@@ -37,6 +45,14 @@
   align-items: center;
   text-align: center;
   position: relative;
+
+  @include mqm(tablet-plus) {
+    min-width: 200px;
+  }
+
+  @include mqm(tablet) {
+    min-width: auto;
+  }
 
   &::before {
     content: "";

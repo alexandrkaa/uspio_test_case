@@ -1,6 +1,10 @@
 .wrapper {
   margin: 0 auto;
-  max-width: map-get($breakpoints, "desktop");
+  max-width: map-get($breakpoints, desktop);
+
+  @include mqm(tablet-plus) {
+    max-width: map-get($breakpoints, tablet-plus);
+  }
 }
 
 .wrapper_theme_grey {

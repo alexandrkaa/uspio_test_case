@@ -15,6 +15,11 @@
 .main-footer__contacts {
   width: 293px;
   border-right: 1px solid $gray-light;
+
+  @include mqm(tablet) {
+    width: 100%;
+    border: 0;
+  }
 }
 
 .main-footer__contacts-list {
@@ -65,4 +70,13 @@
   justify-content: space-around;
   padding: 0 30px;
   width: 100%;
+
+  @include mqm(tablet) {
+    flex-wrap: wrap;
+  }
+
+  @include mqm(mobile-plus) {
+    flex-direction: column;
+    padding: 10;
+  }
 }

@@ -8,7 +8,7 @@
     <meta name="author" content="Aleksandr Komarov" />
     <link type="text/plain" rel="author" href="humans.txt" />
   </head>
-  <body>
+  <body class="no-js">
     <h1 class="visually-hidden">Инновационная клиника онлайн-проверки зрения</h1>
     <article class="popup">
       <form class="popup__get-appointment get-appointment">
@@ -63,11 +63,11 @@
         </section>
       </div>
       <section class="main-header__navigation">
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation_closed">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть или закрыть меню</span>
+          </button>
           <ul class="main-navigation__menu">
-            <li class="main-navigation__item">
-              <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
-            </li>
             <li class="main-navigation__item">
               <a href="#" class="main-navigation__link text text_theme_white">Текст 1</a>
             </li>
@@ -387,20 +387,6 @@
         </div>
       </section>
     </footer>
-    <!-- <div id="app">
-      <div class="owl-carousel owl-theme">
-        <div>Your Content</div>
-        <div>Your Content</div>
-        <div>Your Content</div>
-        <div>Your Content</div>
-        <div>Your Content</div>
-        <div>Your Content</div>
-        <div>Your Content</div>
-      </div>
-    </div>
-    <a href="vite.svg" data-fancybox data-caption="Caption for single image">
-      <img src="vite.svg" alt="" />
-    </a> -->
     <script defer type="module" src="./src/js/index.js"></script>
   </body>
 </html>

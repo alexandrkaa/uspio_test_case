@@ -12,8 +12,19 @@
     @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
+  } @else {
+    @warn "Breakpoint doesn't exist, please check breakpoints map.";
   }
-  @else {
+}
+
+@mixin mqm($breakpoint) {
+  // Goes to $breakpoints map and gets each $breakpoint value (if any)
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Create a media query based on that $breakpoint value
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
     @warn "Breakpoint doesn't exist, please check breakpoints map.";
   }
 }

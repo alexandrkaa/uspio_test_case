@@ -5,6 +5,10 @@
 
 .lead__wrapper {
   display: flex;
+
+  @include mqm(tablet) {
+    flex-direction: column;
+  }
 }
 
 .lead__image {

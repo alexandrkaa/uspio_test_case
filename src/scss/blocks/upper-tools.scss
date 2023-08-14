@@ -3,6 +3,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include mqm(tablet) {
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
 
 .upper-tools__get-appointment {
@@ -23,6 +28,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include mqm(tablet) {
+    padding: 10px 0;
+    padding-left: 0;
+    align-items: flex-start;
+    border: 0;
+  }
 }
 
 .upper-tools__phone {
@@ -34,13 +46,27 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @include mqm(tablet) {
+    padding: 15px 0;
+  }
 }
 
 .upper-tools__cart {
   display: flex;
   flex-direction: row;
+
+  @include mqm(tablet) {
+    padding: 15px 0;
+  }
 }
 
 .upper-tools__favorite-link {
   margin-right: 20px;
+}
+
+.button upper-tools__get-appointment {
+  @include mqm(tablet) {
+    padding: 15px 0;
+  }
 }

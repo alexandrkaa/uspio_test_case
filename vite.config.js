@@ -1,7 +1,7 @@
 // https://vitejs.dev/config/
 import { defineConfig } from "vite";
 import viteImagemin from 'vite-plugin-imagemin'
-
+import { serviceWorker } from "./sw-plugin";
 
 export default defineConfig({
   build: {
@@ -54,5 +54,6 @@ export default defineConfig({
 
       }
     }),
+    serviceWorker()
   ],
 });

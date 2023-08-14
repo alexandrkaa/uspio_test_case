@@ -1,5 +1,4 @@
 .popup {
-  // display: flex;
   display: none;
   position: fixed;
   z-index: 100;
@@ -11,4 +10,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.popup__get-appointment {
+  width: 30%;
+
+  @include mqm(tablet-plus) {
+    width: 50%;
+  }
+
+  @include mqm(tablet-plus) {
+    width: 80%;
+  }
 }

@@ -4,6 +4,10 @@
 
 .hero__wrapper {
   display: flex;
+
+  @include mqm(tablet) {
+    flex-direction: column;
+  }
 }
 
 .hero__header {
@@ -15,10 +19,6 @@
 
 .hero__header_theme_green {
   color: $green-light;
-}
-
-.hero__img {
-  float: right;
 }
 
 .hero__content {

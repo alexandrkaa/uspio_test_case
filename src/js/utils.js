@@ -13,3 +13,8 @@ export const webpClass = (className = 'webp') => {
     document.body.classList.remove(className);
   }
 };
+
+export const noJs = () => {
+  document.body.classList.remove('no-js');
+  document.body.classList.add('js');
+}
